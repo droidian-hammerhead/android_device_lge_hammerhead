@@ -18,12 +18,12 @@
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/halium.mk)
 
 PRODUCT_NAME := full_hammerhead
 PRODUCT_DEVICE := hammerhead
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on HammerHead
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 

@@ -104,6 +104,7 @@ TARGET_KERNEL_CONFIG := lineageos_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(COMMON_PATH)/charger/images
 
 TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
 
@@ -133,5 +134,8 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS:= true
 ifneq ($(TARGET_BUILD_VARIANT),user)
 SELINUX_IGNORE_NEVERALLOWS := true
 endif
+
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_ROOT_EXTRA_FOLDERS += firmware persist
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
