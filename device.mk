@@ -411,7 +411,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/usb/mtp-server.conf:system/halium/usr/share/upstart/sessions/mtp-server.conf \
     $(LOCAL_PATH)/ubuntu/system/on-post-fs-data.rc:system/etc/init/on-post-fs-data.rc \
     $(LOCAL_PATH)/ubuntu/system/on-post-fs-data.sh:system/bin/on-post-fs-data.sh \
-    $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf
+    $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
+    $(LOCAL_PATH)/ubuntu/bluetooth/bluetooth-touch-android.conf:system/halium/etc/init/bluetooth-touch-android.conf
+
 
 
 # Ubuntu Touch additional packages
@@ -421,8 +423,13 @@ PRODUCT_PACKAGES += \
     miniafservice \
     libminisf \
     libnetutils \
+    android.hardware.radio@1.2 \
     android.hardware.contexthub@1.0 \
     android.hardware.media.omx@1.0-service \
+    android.hardware.light@2.0 \
+    android.hardware.vibrator@1.0 \
+    vendor.lineage.camera.motor@1.0
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ubuntu.widi.supported=1
