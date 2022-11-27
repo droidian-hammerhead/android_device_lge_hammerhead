@@ -44,8 +44,6 @@ do
     ;;
   lge)
     TO_EXTRACT="\
-            system/app/qcrilmsgtunnel/qcrilmsgtunnel.apk \
-            system/app/UpdateSetting.apk \
             system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
             system/etc/acdbdata/MTP/MTP_General_cal.acdb \
             system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -56,7 +54,6 @@ do
             system/etc/qcril.db \
             system/etc/sensor_def_hh.conf \
             system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
-            system/framework/serviceitems.jar \
             system/vendor/bin/vss_init \
             system/vendor/firmware/bu24205_LGIT_VER_2_DATA1.bin \
             system/vendor/firmware/bu24205_LGIT_VER_2_DATA2.bin \
@@ -105,7 +102,6 @@ do
             system/etc/firmware/cpp_firmware_v1_1_6.fw \
             system/etc/firmware/cpp_firmware_v1_2_0.fw \
             system/etc/permissions/qcrilhook.xml \
-            system/framework/qcrilhook.jar \
             system/lib/hw/flp.msm8974.so \
             system/lib/hw/gps.msm8974.so \
             system/lib/libadsprpc.so \
